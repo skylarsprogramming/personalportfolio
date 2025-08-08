@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact • Bertsetseg Enkhbayar</title>
+    <meta name="description" content="Get in touch with Bertsetseg Enkhbayar.">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Home">
+          <span class="logo-mark" aria-hidden="true">B</span>
+          <span class="logo-text">Bertsetseg Enkhbayar</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html#intro-video">Intro Video</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section grid-2">
+      <section>
+        <h1>Contact</h1>
+        <p class="section-desc">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:brtstg.aeu@gmail.com">brtstg.aeu@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">Location</span>
+            <span>Cologne, Germany</span>
+          </li>
+          <li>
+            <span class="contact-label">Social</span>
+            <span>
+              <a href="#" aria-label="GitHub">GitHub</a>
+              · <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              · <a href="#" aria-label="Instagram/X">Instagram/X</a>
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="form-heading">
+        <h2 id="form-heading">Send a message</h2>
+        <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); this.reset(); this.querySelector('.form-note').hidden=false;">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send</button>
+          <p class="form-note" hidden>Thanks! This demo form does not send yet. Hook it up to your backend or a form service.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Bertsetseg Enkhbayar. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script type="module" src="scripts/scroll-animations.js"></script>
+  </body>
+</html>
+
+
